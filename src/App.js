@@ -5,19 +5,19 @@ import './app.scss';
 const Item = styled(Paper)(({ theme }) => ({
 	// backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
 	// ...theme.typography.body2,
+	// color: theme.palette.text.secondary,
 	padding: '1rem',
 	textAlign: 'center',
-	// color: theme.palette.text.secondary,
 }));
 
 function App() {
 	return (
 		<div className='App'>
 			<Grid container spacing={0}>
-				<Grid md={3} item xs={4}>
+				<Grid md={2} item xs={4}>
 					<Box className='box'></Box>
 				</Grid>
-				<Grid item md={9} xs={8}>
+				<Grid item md={10} xs={8}>
 					<PrimarySearchAppBar />
 				</Grid>
 			</Grid>
