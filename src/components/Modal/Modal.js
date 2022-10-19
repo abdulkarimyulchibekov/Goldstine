@@ -114,10 +114,8 @@ export const ModalComponent = ({ setOpen, open }) => {
 							};
 							setId(id + 1);
 							if (open.defaultValue) {
-								console.log('1');
 								editPerson(open?.defaultValue?.id, data);
 							} else if (!open.defaultValue) {
-								console.log(2);
 								addPerson(data);
 							}
 							setOpen({ isOpen: false });
